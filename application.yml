@@ -1,0 +1,8 @@
+default:
+  info: "Collection of microservices for finances tracking app"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
