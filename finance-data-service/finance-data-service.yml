@@ -9,7 +9,7 @@ spring:
     hibernate:
       ddl-auto: create-drop
       show_sql: true
-      generate-ddl: true
+    generate-ddl: true
 
 eureka:
   client:
