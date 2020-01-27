@@ -6,10 +6,10 @@
         <appender-ref ref="CONSOLE"/>
     </logger>
 
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>DEBUG</level>
-        </filter>
-    </appender>
 
+    <!-- <springProfile name="production">
+         <logger name="guru.springframework.controllers" level="WARN" additivity="false">
+             <appender-ref ref="FILE" />
+         </logger>
+     </springProfile>-->
 </configuration>
