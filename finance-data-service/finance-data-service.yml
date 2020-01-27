@@ -8,8 +8,17 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+      show_sql: true
+      generate-ddl: true
 
 eureka:
   client:
     service-url:
       defaultzone: http://localhost:8081
+
+com:
+  mps:
+    finance:
+      jpa:
+        repo:
+          enabled: true
