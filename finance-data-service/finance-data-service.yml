@@ -14,9 +14,10 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultzone: http://localhost:8081
+      defaultZone: http://localhost:8081
   instance:
     preferIpAddress: true
+
 com:
   mps:
     finance:
