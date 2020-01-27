@@ -13,7 +13,7 @@ spring:
 
 eureka:
   client:
-    service-url:
+    serviceUrl:
       defaultzone: http://localhost:8081
   instance:
     preferIpAddress: true
