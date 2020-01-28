@@ -11,6 +11,17 @@ spring:
       show_sql: true
       generate-ddl: true
 
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+    logging:
+      level:
+        org:
+          hibernate:
+            type: trace
+
 eureka:
   client:
     serviceUrl:
