@@ -6,21 +6,12 @@ spring:
     name: finance-data-service
 
   jpa:
-    hibernate:
-      ddl-auto: create-drop
-      show_sql: true
-      generate-ddl: true
-
+    show_sql: true
     properties:
       hibernate:
         show_sql: true
         format_sql: true
 
-    logging:
-      level:
-        org:
-          hibernate:
-            type: trace
 
 eureka:
   client:
