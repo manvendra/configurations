@@ -8,4 +8,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultzone: http://localhost:8081
+      defaultZone: http://localhost:8081/eureka
