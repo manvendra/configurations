@@ -11,7 +11,7 @@
     <appender name="HIBERNATE" class="ch.qos.logback.core.ConsoleAppender">
         <withJansi>true</withJansi>
         <encoder>
-            <pattern>%magenta(%date) %highlight(%-5level) %cyan(%logger{5}@[%-4.30thread]) :: %yellow(%msg%n)</pattern>
+            <pattern>%magenta(%date) :: %yellow(%msg%n)</pattern>
         </encoder>
     </appender>
 
