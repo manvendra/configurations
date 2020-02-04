@@ -8,9 +8,19 @@
             <pattern>%yellow(%date) %highlight(%-5level) %cyan(%logger{5}@[%-4.30thread]) :: %magenta(%msg%n)</pattern>
         </encoder>
     </appender>
+    <appender name="HIBERNATE" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+        <encoder>
+            <pattern>%magenta(%date) %highlight(%-5level) %cyan(%logger{5}@[%-4.30thread]) :: %yellow(%msg%n)</pattern>
+        </encoder>
+    </appender>
 
-    <logger name="org.springframework.boot" level="INFO" additivity="false">
+    <logger name="org.springframework.boot" level="DEBUG" additivity="false">
         <appender-ref ref="OUTPUT"/>
+    </logger>
+
+    <logger name="org.hibernate.SQL" level="INFO" additivity="false">
+        <appender-ref ref="HIBERNATE"/>
     </logger>
 
     <root level="INFO">
