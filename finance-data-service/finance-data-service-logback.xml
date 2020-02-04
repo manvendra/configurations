@@ -3,9 +3,15 @@
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
     <logger name="org.springframework.boot" level="INFO" additivity="false">
-        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="OUTPUT"/>
     </logger>
 
+    <appender name="OUTPUT" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+        <encoder>
+            <pattern>%date %highlight(%-5level) %cyan(%logger{5}@[%-4.30thread]) - %msg%n</pattern>
+        </encoder>
+    </appender>
 
     <!-- <springProfile name="production">
          <logger name="guru.springframework.controllers" level="WARN" additivity="false">
