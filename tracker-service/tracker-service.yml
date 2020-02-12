@@ -9,3 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka
+
+backend:
+  service:
+    pesonUrl: http://finance-data-service
