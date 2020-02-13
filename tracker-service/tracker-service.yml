@@ -14,3 +14,8 @@ person:
   data:
     service:
       url: http://finance-data-service
+
+
+    feign:
+      client:
+        enabled: true
